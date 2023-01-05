@@ -1,0 +1,72 @@
+@import "bootstrap";
+
+.navbar {
+    position: sticky;
+    text-align: center center;
+    background-color:#ef7e8b !important;
+}
+
+.navbar {
+    font-size: 3rem;
+    text-align: center;
+   
+}
+
+h1 {
+    color:rgba(245, 115, 195, 0.877);
+}
+
+
+#logo {
+color:rgb(255, 255, 255);
+font-size: 1em;
+font-weight: 700;
+text-align: center;
+}
+
+#home-container {margin-top: 25px;
+    height: 420px;
+    
+
+}
+
+.jumbotron {
+background-image: asset-url('paty.png');
+background-position: left;
+background-repeat: no-repeat;
+background-size: cover;
+height: 420px;
+}
+
+html,
+  body {
+    height: 100%;
+    background-color: #ffb3bc;
+      } 
+
+#page-content {
+    flex: 1 0 auto;
+ 
+}
+
+#sticky-footer {color: rgba(245, 115, 195, 0.877);
+    background-color: black;
+    flex-shrink: none;
+}
+
+.card-columns {
+    @include media-breakpoint-only(lg) {
+      column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+      column-count: 3;
+      background: transparent;
+      margin-right: 3px;
+      margin-bottom: 1px;
+    
+    }
+  }
+
+  .card-title {color:rgba(0, 0, 0, 0.877);
+    text-shadow: 2px 0 rgba(252, 188, 199, 0.877), -2px 0 rgba(252, 188, 199, 0.877), 0 2px rgba(252, 188, 199, 0.877), 0 -2px rgba(252, 188, 199, 0.877),
+    1px 1px rgba(252, 188, 199, 0.877), -1px -1px rgba(252, 188, 199, 0.877), 1px -1px rgba(252, 188, 199, 0.877), -1px 1px rgba(252, 188, 199, 0.877);}
