@@ -1,12 +1,13 @@
 @import "bootstrap";
 
-.navbar {
+.nav {
     position: sticky;
     text-align: center center;
     background-color:#ef7e8b !important;
+  
 }
 
-.navbar {
+.nav {
     font-size: 3rem;
     text-align: center;
    
@@ -26,33 +27,34 @@ text-align: center;
 
 #home-container {margin-top: 25px;
     height: 420px;
-    
+      
 
 }
 
 .jumbotron {
-background-image: asset-url('paty.png');
-background-position: left;
-background-repeat: no-repeat;
-background-size: cover;
-height: 420px;
+ background-image: asset-url('cats.jpg');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 4000px;
 }
 
 html,
   body {
     height: 100%;
     background-color: #ffb3bc;
+    background-image: asset-url('rackground.png');
       } 
 
 #page-content {
-    flex: 1 0 auto;
+    flex: 1, 0, auto;
  
 }
 
-#sticky-footer {color: rgba(245, 115, 195, 0.877);
-    background-color: black;
+#sticky-footer {color: rgba(167, 47, 93, 0.877);
+    background-color:#ef7e8b;
     flex-shrink: none;
-}
+  }
 
 .card-columns {
     @include media-breakpoint-only(lg) {
@@ -62,11 +64,79 @@ html,
       column-count: 3;
       background: transparent;
       margin-right: 3px;
-      margin-bottom: 1px;
+      margin-bottom: 2px;
     
     }
   }
 
   .card-title {color:rgba(0, 0, 0, 0.877);
     text-shadow: 2px 0 rgba(252, 188, 199, 0.877), -2px 0 rgba(252, 188, 199, 0.877), 0 2px rgba(252, 188, 199, 0.877), 0 -2px rgba(252, 188, 199, 0.877),
-    1px 1px rgba(252, 188, 199, 0.877), -1px -1px rgba(252, 188, 199, 0.877), 1px -1px rgba(252, 188, 199, 0.877), -1px 1px rgba(252, 188, 199, 0.877);}
+    1px 1px rgba(252, 188, 199, 0.877), -1px -1px rgba(252, 188, 199, 0.877), 1px -1px rgba(252, 188, 199, 0.877), -1px 1px rgba(252, 188, 199, 0.877);
+  }
+
+    .card-body {
+      border-style: dashed;
+      border-width: 1px;
+    border-color:#ef7e8b;
+  }
+
+  .card-text {
+    text-align: justify;
+  }
+
+  .bubble {
+    position: fixed;
+    font-family: sans-serif;
+    font-style: bold;
+    font-size: 14px;
+    line-height: 20px;
+    width: 190px;
+    background: #f4b9ba;
+    border-radius: 40px;
+    padding: 24px;
+    text-align: center;
+    color: #fff;
+    border-color: #fff;
+    border-style: solid;
+    margin-top: 150px;
+    margin-right: 10px;
+    margin-left: 200px;
+    
+  }
+  
+  .bubble-bottom-left:before {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid #f4b9ba;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #f4b9ba;
+    border-bottom: 20px solid transparent;
+    left: 32px;
+    bottom: -24px;
+   
+  }
+
+  .avatar {
+    border-radius: 100%;
+    padding: 7px;
+    width: 84px;
+    box-shadow: 6px, 6px, #000;
+    background-color: #fff;
+    border: 1px, solid, #ffb3bc;
+    position: fixed;
+    margin-top: 300px;
+    margin-right: 10px;
+    margin-left: 25px;
+    
+  }
+
+  @media only screen and (min-width: 768px) {
+    iframe{
+      height: 30em;
+    }
+    .card{
+      width: 70%;
+    }
+  }
+  

@@ -1,6 +1,11 @@
-<h1> Showing article details </h1>
-<p><strong> Title: </strong><%= @article.title %> </p>
+
+<div class="container">
+<div class="row justify-content-center bg-light">
+  <div class="col-10">
+  <p><strong> Title: </strong><%= @article.title %> </p>
+  
 <p><strong> Description: </strong><%= @article.description %></p>
+</div></div></div>
 
 <%= link_to 'Editar', edit_article_path(@article) %> |
 <%= button_to 'Deletar', article_path(@article), method: :delete, data: { "turbo_confirm": "Você tem certeza?" } %> |
