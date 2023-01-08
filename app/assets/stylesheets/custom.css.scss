@@ -25,19 +25,13 @@ font-weight: 700;
 text-align: center;
 }
 
+
 #home-container {margin-top: 25px;
     height: 420px;
       
 
 }
 
-.jumbotron {
- background-image: asset-url('cats.jpg');
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 4000px;
-}
 
 html,
   body {
@@ -140,3 +134,7 @@ html,
     }
   }
   
+  .frame {
+    border: 9px;
+    background-color: #ef7e8b;
+  }
