@@ -1,6 +1,7 @@
 require "test_helper"
 
 class CategoriesControllerTest < ActionDispatch::IntegrationTest
+  
   setup do
     @category = Category.create(name: "Sports")
   end
@@ -43,6 +44,7 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
   #     delete category_url(@category)
   #   end
 
-    assert_redirected_to categories_url
-  end
+  #   assert_redirected_to categories_url
+  # end
+  
 end
