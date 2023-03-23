@@ -11,14 +11,14 @@ class ArticlesController < ApplicationController
 
   
   def show
-     end
+  end
 
   def new
     @article = Article.new
   end
 
   def edit
-      end
+  end
 
 def update
     if @article.update(article_params)
@@ -37,12 +37,12 @@ end
     redirect_to @article
   else
     render 'new', status: :unprocessable_entity
-  end
+    end
   end
   
   def destroy
    @article.destroy
-    redirect_to articles_path
+  redirect_to articles_path
   end
   
 private
@@ -52,7 +52,7 @@ def set_article
 end
   
 def article_params
-  params.require(:article).permit(:title, :description)
+  params.require(:article).permit(:title, :description, category_ids: [])
 end
 
 def require_same_user

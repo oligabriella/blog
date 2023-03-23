@@ -17,6 +17,9 @@
       <% end %>
         </div> 
         <div class="card-footer text-muted">
+          <div class= "mt-2"> <% if article.categories.any? %>
+           <%= render article.categories %></div>
+        <% end %>
         <small> Created <%= time_ago_in_words(article.created_at) %> ago, edited <%= time_ago_in_words(article.updated_at) %> ago.</small>
         </div>
     </div>
